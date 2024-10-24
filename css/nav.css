@@ -32,7 +32,7 @@
     /* background-color: var(--yellow);
     border-radius: 5px; */
     color: var(--yellow);
-    border-bottom: solid 2px var(--yellow);
+    border-bottom: solid 2px var(--brown);
     transition: 0.3s ease;
 }
 .navbox {

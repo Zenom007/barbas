@@ -1,3 +1,4 @@
+@import "./form.css";
 body {
     font-family: Arial, sans-serif;
 }
@@ -94,28 +95,7 @@ header .logo {
     width: 50%;
 }
 
-/* form */
 
-.form-group {
-    width: 100%;
-    padding: 5px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    padding: 8px;
-    width: 100%;
-    border-radius: 8px;
-}
-
-.form-group button {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 10px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-}
 
 .form-group button:hover {
     background-color: var(--yellow);
@@ -243,4 +223,38 @@ header .logo {
 .card-content:hover>* {
     transform: translateY(0px);
 } */
+
+@media (max-width:760px) {
+    .header-content {
+        flex-direction: column-reverse;
+    }
+
+    .header-title,
+    header .logo {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-map, 
+    .contact-form {
+        padding: 40px;
+        width: 100%;
+    }
+
+
+}
+@media print {
+    img {
+        display: none;
+
+    }
+}
+
+
 
