@@ -1,5 +1,6 @@
 import { validateEmail, validateName, validatePassword, validateTel } from '../service/validator.js'
 import{Person} from "../domain/Person.js"
+import{personService} from "../service/person.service.js"
 
 
 validateName()
@@ -22,6 +23,7 @@ function submitForm(person){
    buttonSubmit.addEventListener("click" , () => { 
     const person = getFormPerson()
     console.log(person)
+    personService.add(person)
 
    })
 
